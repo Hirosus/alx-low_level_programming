@@ -1,24 +1,37 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
+ *
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
+int i, j, k;
 
 for (i = 0; i < 10; i++)
 {
-putchar(i + 48);
-if (i != 9)
+for (j = i + 1; j < 10; j++)
 {
+for (k = j + 1; k < 10; k++)
+{
+putchar(i + '0');
 putchar(',');
 putchar(' ');
-}
-}
-putchar('\n');
+putchar(j + '0');
+putchar(',');
+putchar(' ');
 
+if (k == 9)
+putchar(k + '0');
+else
+{
+putchar(k + '0');
+putchar('\n');
+}
+}
+}
+}
 return (0);
 }
