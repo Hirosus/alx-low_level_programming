@@ -4,7 +4,7 @@
  * delete_nodeint_at_index - function that deletes the node at index
  * @head: a pointer
  * @index: the index of the node that should be deleted
- * 
+ *
  * Return: 1 if it succeeded, -1 if it failed
  */
 
